@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+.box_model{
+    background-color: aqua;
+    width: 250px;
+    height: auto;
+    padding-top: 10px;
+    padding-right: 40px; 
+    padding-bottom: 30px;
+    padding-left: 20px;
+
+padding: 10px 40px 30px 20px;/*Defino los 4 lados en una linea, sentido del reloj*/
+/*
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    
+
+    margin: 10px 40px; /*arriba y abajo*/ 
+    
+    /*overflow: auto;*/
+
+  /*  border: solid 5px red;
+    border-top: solid 8px black;
+    border-bottom: solid 8px black;
+} */
+
+
+body{
+    background-color: rgb(226, 224, 225);
+    font-family: "Roboto", sans-serif;
+}
+html{
+    font-size: 10px;
+}
+
+.encabezado{
+    background-image: url(./img/paisaje.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+
+}
+
+.menuSuperior{
+    list-style-type: none;
+    text-align: center;
+}
+.menuSuperior{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.menuSuperior li{
+    display: inline-block;
+}
+.encabezado li{
+    background-color: rgb(255, 255, 255);
+}
+/*contenido*/
+.contenido{
+    background-color: rgba(0, 61, 48, 0.644);
+    padding: 2rem;
+    width: 70%;
+    float: left;
+}
+.contenido__imagen{
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    border-radius: 5px;
+}
+
+.contenido__imagen img{
+    width: 100%;
+    box-shadow: 5px 5px rgba(53, 53, 53, 0.623);
+    border-radius: 5px;
+}
+
+/*contenido sugerencias*/
+.contenido__sugerencias{
+    background-color: burlywood;
+    border: solid 5px black;
+    border-top: solid 8px gray;
+    line-height: 2rem;
+    padding: 2rem;
+    width: 30%;
+    float: right
+}
+.sugerencias__libros{
+    width: 90%;
+    padding-top: 1rem;
+
+}
+.sugerencias__libros img{
+    width: 100%;
+}
+.lista__libros{
+    padding-top: 1rem;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    clear: both;
+    padding: 2rem;
+    text-align: center;
+}
