@@ -1,33 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Introduccion a CSS</title>
   </head>
   <body>
-    <header>
-        <h1 class="animate__animated animate__bounce">INVITACION</h1>
-      <div class="perfil-tarjeta">
-        <img
-          src="./img/tarjeta.png"
-          alt="Foto de perfil"
-          class="foto-perfil"
-        />
-        <h2 class="name animate__animated animate__pulse">Tarjeta De Boda</h2>
-        <p class="detalles">Detalles adicionales de la tarjeta</p>
-        <div class="detalles">
-            <blockquote><b><p class="animate__animated animate__backInUp animate__delay-1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nesciunt neque, quidem suscipit explicabo iusto earum deserunt cumque quibusdam dolorum? Voluptatem nesciunt voluptates, repellendus maxime at placeat impedit! Dolorem, quas.</p> </b> 
-        </blockquote>
+    <header class="encabezado">
+      <nav>
+        <ul class="menuSuperior">
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="personajes.html"> Personajes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+      <h1 class="titulo">Cubo</h1>
+    </header>
 
-        <div class="animate__animated animate__headShake animate__delay-2s">"2024"</div>
+    <!-- contenido -->
+
+    <section class="contenido">
+      <h2>Personajes</h2>
+      <div>
+        <h3>Groot</h3>
+        <div class="contenido__imagen">
+          <img src="./img/groot.jpg" alt="Groot" />
         </div>
       </div>
-    </header>
+      <div>
+        <h3>Esfera</h3>
+        <div class="contenido__imagen">
+          <img src="./img/esfera.png" alt="Esf" />
+        </div>
+      </div>
+      <div>
+        <h3>Cubo Negro</h3>
+        <div class="contenido__imagen">
+          <img src="./img/cubonegro.jpg" alt="Cubo" />
+        </div>
+      </div>
+    </section>
+
+    <aside class="contenido__sugerencias">
+      <h4>Sugerencias Libros</h4>
+      <div class="sugerencias__libros">
+        <img src="./img/lineas.jpg" alt="Lineas" />
+      </div>
+      <div class="lista__libros">
+        <li>Groot</li>
+        <li>Esfera</li>
+        <li>cubo negro</li>
+      </div>
+    </aside>
+
+    <footer class="footer">Pie de pagina</footer>
+
+    <!-- 
+    <div class="box_model">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nulla,
+        inventore sunt reiciendis qui aspernatur iure sapiente veritatis
+        doloribus. Natus ea possimus vero nobis voluptas facilis ad voluptatum
+        mollitia est!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+        voluptates labore quia ex repellendus voluptatem harum unde earum ea,
+        fugiat minus doloribus voluptate modi nemo optio quisquam perspiciatis
+        autem hic.
+      </p>
+    </div> -->
   </body>
 </html>
