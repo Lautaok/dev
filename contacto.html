@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>contacto</title>
+  </head>
+  <body>
+    <header class="encabezado">
+      <nav>
+        <ul class="menuSuperior">
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="personajes.html"> Personajes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="Nosotros">Nosotros</a></li>
+        </ul>
+      </nav>
+      <h1 class="titulo">Cubo</h1>
+    </header>
+
+    <div>
+      <ul class="ejemplo">
+        <li><a href="index.html"> ejemplo 1 </a></li>
+        <li><a href="personajes.html"> ejemplo 2</a></li>
+        <li><a href="contacto.html">ejemplo 3</a></li>
+        <li><a href="Nosotros">ejemplo 4</a></li>
+      </ul>
+    </div>
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <fieldset class="fieldset">
+        <legend class="legend">Informacion del contacto</legend>
+
+        <form action="https://formspree.io/f/xoqgbpwp" method="POST">
+          <div class="form-group">
+            <label for="nombre" class="label">Nombre</label>
+            <input
+              type="text"
+              class="input"
+              name="nombre"
+              id="nombre"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="apellido" class="label">Apellido</label>
+            <input
+              type="text"
+              class="input"
+              name="apellido"
+              id="apellido"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="clave" class="label">Contraseña</label>
+            <input
+              type="password"
+              name="clave"
+              class="input"
+              id="clave"
+              minlength="4"
+              maxlength="8"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="edad" class="label">Edad</label>
+            <input
+              type="number"
+              name="edad"
+              id="edad"
+              class="input"
+              min="18"
+              max="100"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="comentario" class="label">Comentario</label>
+            <textarea
+              name="Comentario"
+              id="comentario"
+              rows="6"
+              cols="12"
+              minlength="10"
+              maxlength="200"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="sitioweb" class="label">Sitio Web</label>
+            <input
+              type="url"
+              class="input"
+              name="Sitioweb"
+              pattern="http?://.+"
+              title="Por favor ingrese una URL valida"
+            />
+          </div>
+          <div>
+            <label class="label">
+              Your email:
+              <input type="email" class="input" name="email">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label for="pais" class="label">Pais</label>
+            <select name="pais" id="">
+              <option value="A">Argentina</option>
+              <option value="P">Peru</option>
+              <option value="U">Uruguay</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p for="Colores">Seleccion tu color</p>
+
+            <input type="radio" name="color" value="rojo" />
+            <label for="Color">Rojo</label>
+
+            <input type="radio" name="azul" value="azul" />
+            <label for="Color">Azul</label>
+
+            <input type="radio" name="verde" value="verde" />
+            <label for="Color">Verde</label>
+          </div>
+
+          <div class="form-group">
+            <label for="cubo">cubo</label>
+            <input type="checkbox" name="palito" />
+            <label for="groot">groot</label>
+            <input type="checkbox" name="palito" />
+            <label for="nada">nada</label>
+            <input type="checkbox" name="palito" />
+          </div>
+
+          <input
+            type="submit"
+            class="submit-enviar"
+            value="Enviar formulario"
+          />
+        </form>
+        <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xoqgbpwp",
+    title: "En que puedo ayudarte?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
+
+
+      </fieldset>
+    </section>
+  </body>
+</html>

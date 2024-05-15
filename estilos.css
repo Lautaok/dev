@@ -64,6 +64,11 @@ html{
 .menuSuperior li{
     display: inline-block;
 }
+
+.menuSuperior li a:active{
+    background-color: rgb(231, 111, 111);
+}
+
 .encabezado li{
     background-color: rgb(255, 255, 255);
 }
@@ -114,4 +119,96 @@ html{
     clear: both;
     padding: 2rem;
     text-align: center;
+}
+
+
+/*Formulario*/
+
+.formulario{
+    width: 35%;
+    margin: 0 auto;
+
+}
+
+.fieldset{
+    border: 1px solid #ccc;
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.legend{
+    font-weight: bold;
+
+}
+
+.form-group{
+    margin-bottom: 1,5rem;
+}
+
+.label{
+    display: block;
+
+}
+
+.input, textarea, select{
+    width: 100%;
+}
+
+.input:focus{
+    background-color:rgb(192, 192, 192);
+}
+
+.submit-enviar{
+    padding: 1rem 2rem;
+    background-color: rgb(2, 204, 140);
+    border: none;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.submit-enviar:hover{
+    background-color: rgba(4, 192, 129, 0.527);
+}
+
+.submit-enviar:focus{
+    color: darkred;
+}
+
+.ejemplo li a:hover{
+    color: red;
+    
+}
+
+.ejemplo li a:active{
+    color: rgb(172, 92, 0);
+}
+
+.ejemplo li a:focus{
+    color: rgb(35, 212, 0);
+    
+}
+
+.ejemplo li a:visited{
+    color: rgb(184, 0, 168);
+    font-size: 2rem;
+    background-color: bisque;
+
+}
+
+/*ejemplos pseudoclases*/
+a:hover{ font-weight:bold; background-color:blue; color:white; text-decoration:underline; }
+a:link{ text-decoration:none; color:red; }
+a:visited{ color:#999999; }
+a:active{ background-color:yellow; color:black; 
+}
+
+div:not(.padre){
+    padding-left:40px;
+    padding-right:40px;
+}
+.padre div:nth-child(2){ 
+    font-weight:bold; color:orange; 
 }
