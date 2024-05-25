@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1rem;;
+}
+
+body{
+    background-color: rgb(88, 88, 27);
+    font-family: "Roboto", sans-serif;
+    overflow: auto;
+}
+/* Estilos para el encabezado */
+.encabezado {
+    background-color: #000000d5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffee00;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.ir_arriba{
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+    text-decoration: none;
+    
+}
+
+a{
+    color: #fff;
+}
+
+/* Estilos para el menú */
+.menu {
+    background-color: #adadad46;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Estilos para el contenido principal */
+.contenido__img {
+    padding: 20px;
+    flex: 1; /* Hacemos que los elementos "article" se expandan para ocupar el espacio disponible */
+    margin-right: 20px; /* Añadimos un margen entre las imágenes */
+    display: flex;
+    border-radius: 10%;
+}
+.seccion {
+    margin-bottom: 20px;
+    background-color: #fcfcfcd5;
+    box-shadow: 0 0 10px rgba(255, 254, 254, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: auto;
+    line-height: 2rem;
+}
+
+.imagen, .video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el pie de página */
+.pie {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+iframe {
+    border: none; /* Esto eliminará cualquier borde del iframe */
+}

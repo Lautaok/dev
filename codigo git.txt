@@ -1,0 +1,25 @@
+create nuevo repositiorio
+
+git init
+git add . 
+git commit -m " "
+git remote add origin https://github.com/Lautaok/dev.git
+git push -u origin master
+
+
+o enviar un repositorio existente desde la línea de comando
+
+git remote add origin (link github)
+git push -u origin master
+
+cuando estamos codeando queda asi:
+ git init
+git add . 
+git commit -m " "
+git push
+
+EN CASO DE CONFLICTO
+
+git add .
+git commit -m "Resolver conflictos"
+git push

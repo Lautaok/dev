@@ -1,0 +1,69 @@
+body{
+    background: rgb(232,130,144);
+background: linear-gradient(90deg, rgba(232,130,144,0.2861519607843137) 100%, rgba(2,0,36,1) 100%);
+}
+
+html{
+    font-size: 10px;
+}
+
+
+.perfil-tarjeta {
+    background: linear-gradient(to right, #ff6b6b, #8d2de28a);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.perfil-tarjeta:hover,
+.perfil-tarjeta:focus {
+    background-color: #f1f1f1;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    transform: rotateZ(25deg);
+}
+
+.foto-perfil:hover,
+.foto-perfil:focus {
+    transform: scale(1.1);
+}
+
+.name {
+    color: #fffcfc;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 2s ease;
+    transform: perspective();
+    
+}
+
+.name:hover,
+.name:focus {
+    color: #f89f9f;
+}
+
+.detalles{
+    color: #eee;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+@keyframes aparecer{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.detalles:hover,
+.detalles:focus {
+    color: black;
+}
